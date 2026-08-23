@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=528, height=792, initial-scale=1.0">
+    <title>Ice Vagus Shock - X3 Somatic Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&family=Roboto+Slab:wght@700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        body {
+            width: 528px;
+            height: 792px;
+            overflow: hidden;
+            background-color: #FFFFFF;
+            color: #000000;
+            font-family: 'Brandon Grotesque', 'Jost', -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-container {
+            width: 528px;
+            height: 792px;
+            padding: 20px 22px 20px 22px;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+            border: 4px solid #000000;
+        }
+        
+        /* Top Category Pill */
+        .category-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        .category-pill {
+            background: #000000;
+            color: #FFFFFF;
+            padding: 3px 12px;
+            font-size: 16px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-radius: 3px;
+        }
+        .category-line {
+            flex: 1;
+            height: 2.5px;
+            background: #000000;
+        }
+
+        /* Title Area: Large Slab Serif strictly 1 line */
+        .title-block {
+            margin-bottom: 4px;
+        }
+        .title-text {
+            font-family: 'Roboto Slab', 'Rockwell', serif;
+            font-weight: 900;
+            font-size: 37px;
+            line-height: 1.12;
+            color: #000000;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            letter-spacing: -0.3px;
+        }
+        
+        /* Duration Badge: 1.5x Larger, Spaced Kerning */
+        .duration-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 5px;
+            background: #FFFFFF;
+            color: #000000;
+            border: 2.5px solid #000000;
+            padding: 4px 16px;
+            border-radius: 28px;
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .duration-badge svg {
+            width: 20px;
+            height: 20px;
+            fill: #000000;
+        }
+
+        /* Vector Art Box */
+        .art-box {
+            width: 100%;
+            height: 142px;
+            margin: 10px 0 10px 0;
+            border: 2.5px solid #000000;
+            background: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6px;
+        }
+        .art-box svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Section Subhead */
+        .how-header {
+            font-size: 16px;
+            font-weight: 900;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .how-header::after {
+            content: "";
+            flex: 1;
+            height: 2px;
+            background: #000000;
+        }
+
+        /* Step-by-Step List (31px, Spaced Kerning, 450 weight, Balanced Text Wrap) */
+        .steps-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .step-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+        .step-num {
+            min-width: 44px;
+            height: 44px;
+            border: 3px solid #000000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 900;
+            line-height: 1;
+            margin-top: 2px;
+            background: #000000;
+            color: #FFFFFF;
+        }
+        .step-text {
+            font-size: 31px;
+            line-height: 1.28;
+            font-weight: 450;
+            color: #000000;
+            letter-spacing: 0.4px;
+            text-wrap: pretty;
+        }
+        .step-text strong {
+            font-weight: 800;
+            color: #000000;
+        }
+        .step-text u {
+            text-decoration: none;
+            border-bottom: 2.5px solid #000000;
+            padding-bottom: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <!-- Top Category -->
+        <div class="category-row">
+            <span class="category-pill">TEMPERATURE SHOCK</span>
+            <div class="category-line"></div>
+        </div>
+
+        <!-- Title & Duration -->
+        <div class="title-block">
+            <div class="title-text">Ice Vagus Shock</div>
+            <div class="duration-badge">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#000" stroke-width="2.5" fill="none"/><path d="M12 6v6l4 2" stroke="#000" stroke-width="2.5" stroke-linecap="round"/></svg>
+                <span>1 - 2 MINUTES</span>
+            </div>
+        </div>
+
+        <!-- Abstract Vector Art (With Clean, Non-Colliding Labels) -->
+        <div class="art-box">
+            
+        <svg viewBox="0 0 400 135" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="200,12 240,34 240,78 200,100 160,78 160,34" stroke="#000" stroke-width="4.5" fill="none"/>
+            <polygon points="200,24 226,38 226,72 200,86 174,72 174,38" fill="#000"/>
+            
+            <line x1="160" y1="34" x2="105" y2="12" stroke="#000" stroke-width="3"/>
+            <line x1="160" y1="56" x2="90" y2="56" stroke="#000" stroke-width="3.5"/>
+            <line x1="160" y1="78" x2="105" y2="100" stroke="#000" stroke-width="3"/>
+            <circle cx="90" cy="56" r="6" fill="#000"/>
+
+            <line x1="240" y1="34" x2="295" y2="12" stroke="#000" stroke-width="3"/>
+            <line x1="240" y1="56" x2="310" y2="56" stroke="#000" stroke-width="3.5"/>
+            <line x1="240" y1="78" x2="295" y2="100" stroke="#000" stroke-width="3"/>
+            <circle cx="310" cy="56" r="6" fill="#000"/>
+
+            <text x="200" y="125" font-family="'Jost', sans-serif" font-size="13" font-weight="900" fill="#000" text-anchor="middle" letter-spacing="2">CERVICAL VAGUS PATH</text>
+        </svg>
+        
+        </div>
+
+        <!-- How Step-by-Step -->
+        <div>
+            <div class="how-header">PRACTICE STEPS</div>
+            <div class="steps-container">
+                
+        <div class="step-row">
+            <div class="step-num">1</div>
+            <div class="step-text">Press <strong><u>ice or cold roller</u></strong> to inner wrists.</div>
+        </div>
+        
+        <div class="step-row">
+            <div class="step-num">2</div>
+            <div class="step-text">Glide slowly along the <strong><u>side of your neck</u></strong>.</div>
+        </div>
+        
+        <div class="step-row">
+            <div class="step-num">3</div>
+            <div class="step-text">Rest ice on your <strong><u>chest center for 15s</u></strong>.</div>
+        </div>
+        
+        <div class="step-row">
+            <div class="step-num">4</div>
+            <div class="step-text">Take <strong><u>3 deep grounding breaths</u></strong>.</div>
+        </div>
+        
+            </div>
+        </div>
+    </div>
+</body>
+</html>
